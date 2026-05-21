@@ -17,12 +17,12 @@ body {
 }
 
 h1{
-    color: #00ff88;
+    color: #1c6977;
     text-align: center;
 }
 
 h3{
-    color: #00d4ff;
+    color: #59346f;
     border-bottom: 1px solid #333;
     padding-bottom: 5px;
 }
@@ -31,14 +31,14 @@ h3{
     background: #252525;
     padding: 15px;
     border-radius: 5px;
-    border-left: 5px solid #00ff88;
+    border-left: 5px solid #80872a;
 }
 
 button{
     width: 100%;
     padding: 15px;
     margin-top: 20px;
-    background-color: #43a12e;
+    background-color: #7d6628;
     border: none;
     border-radius: 5px;
     font-weight: bold;
@@ -52,5 +52,39 @@ button{
 }
 
 button:hover{
-    background-color: #ac6d1b;
+    background-color: #ed0909;
+}
+
+ul {
+    list-style: nome;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+    color: #ccc;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #252525;
+    color: white;
+    box-sizing: border-box;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 20px 0;
+}
+
+.card{
+    background: #252525;
+    padding: 15px;
+    margin-top: 15px;
+    border-left: 5px solid #00ff88;
 }
