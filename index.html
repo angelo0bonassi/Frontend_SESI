@@ -21,13 +21,14 @@
                 <option value="true">Possui cupom (15% OFF)</option>
             </select>
             
-            <button onclick="executarSistema()">Finalizar Venda</button>
+            <button class="botones" onclick="executarSistema()">Finalizar Venda</button>
         </section>
 
         <hr>
 
         <section id="feedback">
             <p id="mensagem-autorizacao">Preencha os dados acima.</p>
+            <button onclick="mostrarHist()">Mostrar Histórico de Vendas</button>
             <ul id="lista-estoque"></ul>
             <div id="relatorio-final" class="card" style="display: none;">
             </div>

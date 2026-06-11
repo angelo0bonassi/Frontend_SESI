@@ -71,6 +71,5 @@ function executarSistema() {
 }
 
 function mostrarHist() {
-
-
+    window.sessionStorage
 }
