@@ -1,4 +1,4 @@
-// Dados de entrada
+// Dados de entrada 
 /* document.getElementById("---").value puxa
    dados colocados no site pelo ID do elemento */
 const inputNome = document.getElementById("inputNome");
