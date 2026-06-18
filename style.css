@@ -100,3 +100,13 @@ hr {
     cursor: pointer;
     transition: 0.3s;
 }
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px #121b2c;
+}
+
+dialog::backdrop {
+    background-color: transparent;
+}
