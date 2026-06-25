@@ -1,6 +1,6 @@
 body {
-    background-color: #121212;
-    color: #7c7979;
+    background-color: #280604;
+    color: #ffffff;
     font-family: 'Segoe UI', sans-serif;
     display: flex;
     justify-content: center;
@@ -9,60 +9,63 @@ body {
 
 .container {
     width: 400px;
-    background-color: #3a0403;
+    background-color:#3b0904;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #fd0202;
-    box-shadow: 0 10px 30px rgba(250, 1, 1, 0.5);
+    border: 1px solid #ff3c07;
+    box-shadow: 0 0px 30px #801818;
 }
 
-h1{
-    color: #1c6977;
+h1 {
+    color:#4cccff;
     text-align: center;
 }
 
-h3{
-    color: #59346f;
-    border-bottom: 1px solid #333;
+h3 { 
+    color: #078ec4;
+    border-bottom: 1px solid #ffffff;
     padding-bottom: 5px;
 }
 
-.card{
-    background: #252525;
+.card {
+    background: #077caa;
     padding: 15px;
     border-radius: 5px;
-    border-left: 5px solid #80872a;
+    border-left: 5px solid #7aff77;
 }
 
-button{
-    width: 40%;
-    padding: 1px;
-    margin-top: 10px;
-    background-color: #7d6628;
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color:#077caa;
     border: none;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3px;
+    color:#ffffff;
+    transition: transform 0.3s ease;
 }
 
-.formulario{
-    justify-content: center;
-    padding: 20px;
+button:hover {
+    transform: scale(1.04);
+    background-color: #0eabe9;
+    color: #045c7f;
 }
 
-button:hover{
-    background-color: #ed0909;
+button:active {
+    transform: scale(0.9);
 }
 
 ul {
-    list-style: nome;
+    list-style: none;
     padding: 0;
 }
 
 li {
     padding: 5px 0;
-    color: #ccc;
+    color: #4cccff;
 }
 
 input, select {
@@ -70,43 +73,52 @@ input, select {
     padding: 10px;
     margin: 8px 0;
     border-radius: 5px;
-    border: 1px solid #444;
-    background-color: #252525;
-    color: white;
+    border: 1px solid #05658b;
+    background-color: #121b2c;
+    color: #ffffff;
     box-sizing: border-box;
 }
 
 hr {
     border: 0;
-    border-top: 1px solid #333;
+    border-top: 1px solid #ffffff;
     margin: 20px 0;
 }
 
-.card{
-    background: #252525;
-    padding: 15px;
-    margin-top: 15px;
-    border-left: 5px solid #00ff88;
-}
-
-.botones{
-    width: 100%;
-    padding: 15px;
-    margin-top: 20px;
-    background-color: #7d6628;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
 dialog {
     border: none;
     border-radius: 10px;
+    text-align: center;
     padding: 20px;
     box-shadow: 0 4px 10px #121b2c;
+    background-color: #ffffff;
+    width: 500px;
+    height: 650px;
+    animation: fadeIn 0.3s ease-in-out;
 }
 
+/* O backdrop muda a parte atrás do dialog/modal */
 dialog::backdrop {
     background-color: transparent;
+}
+
+dialog strong {
+    color: #078ec4;
+}
+
+#conteudo-modal {
+    min-height: 570px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
